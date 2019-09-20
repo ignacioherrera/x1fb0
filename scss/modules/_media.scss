@@ -1,10 +1,22 @@
 @media screen and (max-width: 767.5px) {
   .home-img {
     max-height: 300px;
-    margin-left: 50px;
+  }
+  .width-100{
+    width: 100%;
   }
   #fp-nav {
     display: none;
+  }
+  .section{
+    padding-top: 69px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .page-p{
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 367px) {
