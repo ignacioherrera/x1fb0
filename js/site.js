@@ -9,7 +9,7 @@ $(document).ready(function () {
     // Fullpage lib
         new fullpage('#fullpage', {
             anchors: ['page1', 'page2', 'page3', 'page4'],
-            navigationTooltips: ['fullPage', 'Open', 'Easy', 'Touch'],
+            navigationTooltips: ['Home', 'Orders', 'Easy', 'Touch'],
             css3: true,
             scrollingSpeed: 1000,
             navigationPosition: 'left',

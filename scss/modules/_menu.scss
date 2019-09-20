@@ -5,21 +5,38 @@
 .menu-button {
   padding: 8px;
 
-  &.is-active:hover, &:hover {
+  &.is-active:hover,
+  &:hover {
     opacity: 1;
-
   }
-  &.is-active{
-    .hamburger-inner{
+  &.is-active {
+    .hamburger-inner {
       width: 100% !important;
+    }
+    .hamburger-inner,
+    .hamburger-inner:before,
+    .hamburger-inner:after {
+      background-color: #000 !important;
+    }
+    .hamburger-inner:after {
+      bottom: 0 !important;
     }
   }
   .hamburger-box {
-    color: $primary_gray;
-    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-      background-color: $primary_gray;
+    color: #fff;
+    .hamburger-inner,
+    .hamburger-inner:before,
+    .hamburger-inner:after {
+      background-color: #fff;
+      height: 2px !important;
     }
-    .hamburger-inner{
+    .hamburger-inner:before {
+      top: -8px;
+    }
+    .hamburger-inner:after {
+      bottom: -8px;
+    }
+    .hamburger-inner {
       width: 80%;
     }
   }
@@ -29,8 +46,8 @@
   color: $primary_gray;
   border: solid 1px $primary_gray;
   text-transform: uppercase;
-  font-family: "D-DIN";
-  font-weight: normal;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
 
   border-radius: 40px;
   &:hover {
@@ -53,10 +70,9 @@
 }
 
 .navbar-bg-custom {
-  background-color: #ffffff;
-  position: fixed!important;
+  background-color: transparent;
+  position: fixed !important;
 }
-
 
 //--------------------------------------------------------------------------------------------
 .clearfix:after {
@@ -125,7 +141,8 @@
   background-color: #2b2b2b;
 }
 
-.pushed-right #nav-button span:nth-child(1), .pushed-right-alt #nav-button span:nth-child(1) {
+.pushed-right #nav-button span:nth-child(1),
+.pushed-right-alt #nav-button span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -139,7 +156,8 @@
   transition: all 0.2s ease-in-out;
 }
 
-.pushed-right #nav-button span:nth-child(2), .pushed-right-alt #nav-button span:nth-child(2) {
+.pushed-right #nav-button span:nth-child(2),
+.pushed-right-alt #nav-button span:nth-child(2) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -155,7 +173,8 @@
   margin: 0px auto 3px;
 }
 
-.pushed-right #nav-button span:nth-child(3), .pushed-right-alt #nav-button span:nth-child(3) {
+.pushed-right #nav-button span:nth-child(3),
+.pushed-right-alt #nav-button span:nth-child(3) {
   display: none;
 }
 
@@ -203,7 +222,7 @@
 
 #main-nav ul {
   position: relative;
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 #main-nav ul li {
@@ -250,8 +269,8 @@
 }
 
 .pushed-right #main-nav ul li:nth-of-type(9) {
-  -webkit-transition: all 0.33s ease-in-out 1.0s;
-  transition: all 0.33s ease-in-out 1.0s;
+  -webkit-transition: all 0.33s ease-in-out 1s;
+  transition: all 0.33s ease-in-out 1s;
 }
 
 .pushed-right #main-nav ul li {
@@ -267,12 +286,13 @@
   display: block;
   font-size: 24px !important;
   font-weight: 400;
-  font-family: D-DIN;
-  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-#main-nav ul li a:hover, #main-nav ul li a.active {
+#main-nav ul li a:hover,
+#main-nav ul li a.active {
   color: rgba(43, 43, 43, 1);
 }
 
@@ -288,11 +308,11 @@
 }
 
 #main-nav ul li ul li:last-child a {
-  padding-bottom: 8px
+  padding-bottom: 8px;
 }
 
 #options {
-  text-align: center
+  text-align: center;
 }
 
 #options li {
@@ -305,7 +325,8 @@
   opacity: 0.7;
 }
 
-#options li a:hover, #options li a.active {
+#options li a:hover,
+#options li a.active {
   opacity: 1;
 }
 
@@ -313,7 +334,8 @@
   position: relative;
 }
 
-.menu-item h5, .menu-item .menu-price {
+.menu-item h5,
+.menu-item .menu-price {
   background: #fff;
   position: relative;
   display: inline-block;
@@ -339,4 +361,3 @@
 
 /* End Navigation
 --------------------------------------------------------------------------------------------------------*/
-
