@@ -28,7 +28,7 @@
             <!-- start main nav -->
             <nav id="main-nav">
                 <ul class=" navbar-nav clearfix pl-2">
-                    <li class="nav-item"><a href="#home" class="nav-link menu-link local-link">Home</a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link menu-link local-link">Home</a></li>
                     <li class="nav-item"><a href="#work" class="nav-link menu-link local-link">Services</a></li>
                     <li class="nav-item"><a href="./about.html" class="nav-link menu-link local-link">About Us</a></li>
                     <li class="nav-item"><a href="#work_process" class="nav-link menu-link local-link">Blog</a>
@@ -201,6 +201,7 @@
                 clientHeight = $(window).height();
                 width = $(window).width();
                 if (width >= 768) {
+                    $('.fp-nav').addClass('fp-white');
                     // Fullpage lib
                     new fullpage('#fullpage', {
                         anchors: ['page1', 'page2', 'page3', 'page4'],
