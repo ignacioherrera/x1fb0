@@ -6,6 +6,10 @@
   background: transparent linear-gradient(61deg, #000000 0%, #353535 100%) 0% 0% no-repeat;
   color: #fff;
 }
+.bg-black{
+  background: #000;
+  color: #fff;
+}
 .bg-white {
   background-color: #fff;
   color: #000;
@@ -59,6 +63,29 @@
     line-height: 24px;
     flex: 0 0 100%;
   }
-
-  
+}
+.img-team{
+  max-width: 317px;
+  width: 35%;
+}
+.title-about{
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+}
+.title-team{
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 109px;
+  line-height: 111px;
+}
+.text-about{
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+}
+.clients-img{
+  width: 20%;
 }

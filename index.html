@@ -173,7 +173,52 @@
 
     <script src="./js/vendor//jquery.min.js" type="text/javascript"></script>
     <script src="./js/vendor//fullpage.min.js" type="text/javascript"></script>
+    <script src="./js/vendor//fullpage.extensions.min.js" type="text/javascript"></script>
+
     <script src="./site.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var clientHeight = $(window).height();
+            var width = $(window).width();
+            //Header al 100% de la pantalla del cliente
+            if (width >= 768) {
+                // Fullpage lib
+                new fullpage('#fullpage', {
+                    anchors: ['page1', 'page2', 'page3', 'page4'],
+                    navigationTooltips: ['HOME', 'SERVICES', 'ABOUT US', 'BLOG', 'CONTACT'],
+                    css3: true,
+                    scrollingSpeed: 1000,
+                    navigationPosition: 'left',
+                    navigation: true,
+                    slidesNavigation: true,
+                    responsiveHeight: 330,
+                    dragAndMove: true,
+                    dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+                    controlArrows: false
+                });
+            }
+            $(window).resize(function () {
+                clientHeight = $(window).height();
+                width = $(window).width();
+                if (width >= 768) {
+                    // Fullpage lib
+                    new fullpage('#fullpage', {
+                        anchors: ['page1', 'page2', 'page3', 'page4'],
+                        navigationTooltips: ['HOME', 'SERVICES', 'ABOUT US', 'BLOG', 'CONTACT'],
+                        css3: true,
+                        scrollingSpeed: 1000,
+                        navigationPosition: 'left',
+                        navigation: true,
+                        slidesNavigation: true,
+                        responsiveHeight: 330,
+                        dragAndMove: true,
+                        dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+                        controlArrows: false
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
