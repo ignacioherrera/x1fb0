@@ -1,0 +1,38 @@
+.fbo {
+  .title-1 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+  .title-2{
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .img-superpuesta{
+      margin-top: -40px;
+      margin-bottom: -15px;
+  }
+  .btn-custom-outline {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px #fff solid;
+    border-radius: 40px;
+    padding: 13px 64px;
+    text-align: center;
+    display: inline;
+    line-height: 24px;
+    flex: 0 0 100%;
+  }
+  .btn-inverted{
+      border-color: #000;
+      color:#000;
+  }
+}

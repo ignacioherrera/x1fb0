@@ -10,15 +10,16 @@ $(document).ready(function () {
         $('body').toggleClass('pushed-right');
         $('#menu-button').toggleClass('is-active');
     });
-    if(width<= 767){
+    if(width<= 767.9){ 
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
             var blanco = false;
             $('.bg-white').each(function(index, element){
-                if(scroll -$(element).offset().top>=0 && scroll- $(element).offset().top<=element.height){
+                if(scroll -$(element).offset().top>=0 && scroll- $(element).offset().top<=$(element).height()){
                     blanco=true;
                 }
             });
+            console.log(blanco);
             if (blanco) {
                 $('.hamburger-inner').addClass('negative');
                 $(".navbar-brand img").attr("src", "./images/icons/Group 26.svg");

@@ -9,21 +9,57 @@
     display: none;
   }
   .section{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .mobile-menu{
     padding-top: 69px;
-    padding-bottom: 60px;
+    padding-bottom: 69px;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .fbo{
+    .title-1{
+      font-size: 32px !important;
+      line-height: 41px !important;
+    }
   }
 }
+@media screen and (max-width: 640px) {
+  .fbo{
+    .title-2{
+      font-size: 33px !important;
+      line-height: 40px !important;
+    }
+    .img-superpuesta{
+      margin-top: -15px;
+      margin-bottom: -4px;
+  }
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .page-p{
     font-size: 22px;
     line-height: 30px;
   }
+  .fbo{
+    .title-1{
+      font-size: 45px;
+      line-height: 52px;
+    }
+  }
 }
-@media screen and (max-width: 367px) {
+@media screen and (max-width: 3993px) {
   #home {
     .subtitle {
       font-size: 35px;
       line-height: 50px;
     }
+  }
+  .btn-custom-outline{
+    font-size: 17px !important;
+    padding: 8px 45px !important;
   }
 }
