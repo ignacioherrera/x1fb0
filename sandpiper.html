@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>X1FB0 - SANDPIPER</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Nunito+Sans:400,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/vendor/fullpage.min.css">
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-light navbar-bg-custom fixed-top">
+            <a class="navbar-brand">
+                <img src="./images/icons/Group 11.svg" height="28px" width="auto" class="img-fluid logo-menu">
+            </a>
+            <button class=" hamburger hamburger--spin menu-button" type="button" id="menu-button">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </button>
+        </div>
+        <nav id="nav-wrapper">
+            <!-- start main nav -->
+            <nav id="main-nav">
+                <ul class=" navbar-nav clearfix pl-2">
+                    <li class="nav-item"><a href="/index.html" class="nav-link menu-link ">Home</a></li>
+                    <li class="nav-item"><a href="/fbo.html" class="nav-link menu-link">FBO</a></li>
+                    <li class="nav-item"><a href="/singlepoint.html" class="nav-link menu-link ">SinglePoint</a></li>
+                    <li class="nav-item"><a href="/pos.html" class="nav-link menu-link ">POS</a></li>
+                    <li class="nav-item"><a href="/cafe.html" class="nav-link menu-link ">Cafe</a></li>
+                    <li class="nav-item active"><a href="/sandpiper.html" class="nav-link menu-link ">SandPiper</a></li>
+                    <li class="nav-item"><a href="/pay.html" class="nav-link menu-link ">Pay</a></li>
+                    <li class="nav-item"><a href="/trx.html" class="nav-link menu-link ">TRX</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link menu-link ">About Us</a></li>
+                    <li class="nav-item"><a href="/contact.html" class="nav-link menu-link ">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- end main nav -->
+            </div>
+    </header>
+    <div id="fullpage" class="singlepoint">
+        <div class="section initial  bg-black container-fluid mobile-menu">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <h1 class=" d-inline-block page-title mb-3">What is SandPiper?</h1>
+                        <p class="page-p mb-4">
+                            X-1FBO is a management and payment processing system designed to bring long needed
+                            automation to FBOs and the General Aviation marketplace. Our software enables FBOs to grow
+                            their businesses profitably by driving efficient operations and better customer service.
+                            X-1FBO is cloud-based, making it secure and easily scaleable as your business grows.
+                        </p>
+                        <a href="#" class="btn-custom-outline">REQUEST A DEMO</a>
+                    </div>
+                </div>
+                <a href="#page2" class="arrow">
+                    <img src="images/icons/Group 2.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="./js/vendor//jquery.min.js" type="text/javascript"></script>
+    <script src="./js/vendor//fullpage.min.js" type="text/javascript"></script>
+    <script src="./js/vendor//fullpage.extensions.min.js" type="text/javascript"></script>
+
+    <script src="./site.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var clientHeight = $(window).height();
+            var width = $(window).width();
+            //Header al 100% de la pantalla del cliente
+            if (width >= 768) {
+                // Fullpage lib
+                new fullpage('#fullpage', {
+                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],
+                    navigationTooltips: ['HOME', 'SERVICES', 'ABOUT US', 'BLOG', 'CONTACT'],
+                    css3: true,
+                    scrollingSpeed: 1000,
+                    navigationPosition: 'left',
+                    navigation: true,
+                    slidesNavigation: true,
+                    responsiveHeight: 330,
+                    dragAndMove: true,
+                    dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+                    controlArrows: false,
+                    onLeave: function (origin, destination, direction) {
+                        if (direction === 'up') {
+                            if (destination.anchor === 'page2' || destination.anchor === 'page4' || destination.anchor === 'page6' || destination.anchor === 'page8' || destination.anchor === 'page10') {
+                                $('.hamburger-inner').addClass('negative');
+                                $(".navbar-brand img").attr("src", "./images/icons/Group 26.svg");
+                                $('#fp-nav').addClass('fp-white');
+                            }
+                            else {
+                                $('.hamburger-inner').removeClass('negative');
+                                $(".navbar-brand img").attr("src", "./images/icons/Group 11.svg");
+                                $('#fp-nav').removeClass('fp-white');
+                            }
+                        }
+                    },
+                    afterLoad: function (origin, destination, direction) {
+                        if (direction === 'down') {
+                            if (destination.anchor === 'page2' || destination.anchor === 'page4' || destination.anchor === 'page6' || destination.anchor === 'page8' || destination.anchor === 'page10') {
+                                $('.hamburger-inner').addClass('negative');
+                                $(".navbar-brand img").attr("src", "./images/icons/Group 26.svg");
+                                $('#fp-nav').addClass('fp-white');
+                            }
+                            else {
+                                $('.hamburger-inner').removeClass('negative');
+                                $(".navbar-brand img").attr("src", "./images/icons/Group 11.svg");
+                                $('#fp-nav').removeClass('fp-white');
+                            }
+                        }
+                    }
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>
