@@ -19,8 +19,18 @@
     padding-top: 69px;
     padding-bottom: 69px;
   }
+  .title-about{
 
+  }
 }
+
+@media screen and (max-width: 991.9px) {
+  .title-team{
+    font-size: 65px;
+    line-height: 77px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .fbo{
     .title-1{
