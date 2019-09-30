@@ -93,32 +93,30 @@
                     dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
                     controlArrows: false,
                     onLeave: function (origin, destination, direction) {
-                        if (direction === 'up') {
                             if (destination.anchor === 'page2' || destination.anchor === 'page4' || destination.anchor === 'page6' || destination.anchor === 'page8' || destination.anchor === 'page10') {
-                                $('.hamburger-inner').addClass('negative');
+                                $('.navbar').addClass('negative');
                                 $(".navbar-brand img").attr("src", "./images/icons/Group 26.svg");
                                 $('#fp-nav').addClass('fp-white');
                             }
                             else {
-                                $('.hamburger-inner').removeClass('negative');
+                                $('.navbar').removeClass('negative');
                                 $(".navbar-brand img").attr("src", "./images/icons/Group 11.svg");
                                 $('#fp-nav').removeClass('fp-white');
                             }
-                        }
+                        
                     },
                     afterLoad: function (origin, destination, direction) {
-                        if (direction === 'down') {
                             if (destination.anchor === 'page2' || destination.anchor === 'page4' || destination.anchor === 'page6' || destination.anchor === 'page8' || destination.anchor === 'page10') {
-                                $('.hamburger-inner').addClass('negative');
+                                $('.navbar').addClass('negative');
                                 $(".navbar-brand img").attr("src", "./images/icons/Group 26.svg");
                                 $('#fp-nav').addClass('fp-white');
                             }
                             else {
-                                $('.hamburger-inner').removeClass('negative');
+                                $('.navbar').removeClass('negative');
                                 $(".navbar-brand img").attr("src", "./images/icons/Group 11.svg");
                                 $('#fp-nav').removeClass('fp-white');
                             }
-                        }
+                        
                     }
                 });
             }
