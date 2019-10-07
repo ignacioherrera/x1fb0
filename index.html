@@ -198,27 +198,7 @@
                     controlArrows: false
                 });
             }
-            $(window).resize(function () {
-                clientHeight = $(window).height();
-                width = $(window).width();
-                if (width >= 768) {
-                    $('.fp-nav').addClass('fp-white');
-                    // Fullpage lib
-                    new fullpage('#fullpage', {
-                        anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
-                        navigationTooltips: ['X1-FBO', 'X1-SinglePoint', 'X1-SandPiper', 'X1-POS', 'X1-Pay', 'X1-TRX'],
-                        css3: true,
-                        scrollingSpeed: 1000,
-                        navigationPosition: 'left',
-                        navigation: true,
-                        slidesNavigation: true,
-                        responsiveHeight: 330,
-                        dragAndMove: true,
-                        dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
-                        controlArrows: false
-                    });
-                }
-            });
+            
         });
     </script>
 </body>
